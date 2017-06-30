@@ -82,6 +82,7 @@
 					<aside class="notes">
 						<li>Go over the list</li>
 						<li>We make it a practical talk -> through examples</li>
+						<li>Yawn / look weird</li>
 					</aside>
 				</section>
 
@@ -116,14 +117,74 @@
 				</section>
 
 				<section>
+					<h1>What is Elm?</h1>
+					<aside class="notes">
+						<ul>
+							<li>Frontend language that compiles to javascript</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<blockquote>
+						<p>
+							“Elm is a domain-specific programming language for declaratively
+							creating web browser-based graphical user interfaces.
+						</p>
+						<p>
+							Elm is purely functional, and is developed with emphasis
+							on usability, performance, and robustness.
+						</p>
+						<p>
+							It advertises "no runtime exceptions in practice,"
+							made possible by the Elm compiler's static type checking.”
+						</p>
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Elm characteristics</h2>
+					<ul>
+						<li><span class="fragment fade-in">Pure </span> Functional language</li>
+						<li class="fragment fade-in">All functions are curried</li>
+						<li class="fragment fade-in">Elm is strongly typed</li>
+						<li class="fragment fade-in">All values are immutable</li>
+						<li class="fragment fade-in">Elm is fast</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="img/benchmark.png" class="noborder">
+				</section>
+
+				<section>
 					<h1>Hello World example</h1>
 				</section>
 
 				<section>
+					<pre><code data-trim data-noescape>
+function add(x) {
+    return function (y) {
+        return x + y;
+    }
+}
+
+add(5)(10) // Returns 15
+
+let addFive = add(5)
+addFive(10) // Returns 15
+addFive(3)   // Returns 8
+					</code></pre>
+				</section>
+
+				<section>
 					<h3>Quick Recap</h3>
+					<li>Elm application starts at the function main</li>
 					<li>Function application by spaces</li>
 					<li>The last part of the function type is the return type</li>
 					<li>All functions in Elm are curried</li>
+					<li>Use the repl to play with functions and types</li>
+					<li>The compiler is your friend</li>
 					<aside class="notes">
 						<ul>
 						<li>Hello World!</li>
