@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,117 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<img src="img/elm-logo.png" class="noborder">
+					<h1>Elm, the runtime error killer</h1>
+				</section>
+
+				<section>
+					<img src="img/would-you-kindly.png" class="noborder">
+				</section>
+
+				<section>
+					<img src="img/google-reactive-programming-conference.png" class="noborder">
+				</section>
+
+				<section>
+					<img src="img/reactiveconf-logo.jpg" class="noborder">
+				</section>
+
+				<section>
+					<img src="img/react-1.png" class="noborder">
+					<img src="img/react-2.png" class="noborder">
+					<img src="img/react-3.png" class="noborder">
+				</section>
+
+				<section>
+					<img src="img/richard-elm-talk.png" class="noborder">
+				</section>
+
+				<section>
+					<img src="img/clockpicker.png" class="noborder">
+				</section>
+
+				<section>
+					<img src="img/elm-clockpicker.png" class="noborder">
+				</section>
+
+				<section>
+					<img src="img/elm-logo.png" class="noborder">
+					<h1>Elm, the runtime error killer</h1>
+				</section>
+
+				<section>
+					<ul>
+						<li>What is Elm</li>
+						<li>The syntax of Elm</li>
+						<li>Elm's Architecture</li>
+						<li>
+							Tools provided by Elm
+							<ul>
+								<li>repl</li>
+								<li>reactor</li>
+								<li>make</li>
+								<li>package</li>
+							</ul>
+						</li>
+					</ul>
+					<aside class="notes">
+						<li>Go over the list</li>
+						<li>We make it a practical talk -> through examples</li>
+					</aside>
+				</section>
+
+				<section>
+					<h1>Hello World!</h1>
+					<ul>
+						<li>Elm-REPL</li>
+						<li>Syntax</li>
+						<li>Types</li>
+						<li>Currying</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Buttons</h1>
+					<ul>
+						<li>Interactive</li>
+						<li>Modules</li>
+						<li>Architecture</li>
+						<li>Elm-Reactor</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Websockets</h1>
+					<ul>
+						<li>More Architecture</li>
+						<li>Pure Functional</li>
+						<li>Commands</li>
+						<li>Subscriptions</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Hello World example</h1>
+				</section>
+
+				<section>
+					<h3>Quick Recap</h3>
+					<li>Function application by spaces</li>
+					<li>The last part of the function type is the return type</li>
+					<li>All functions in Elm are curried</li>
+					<aside class="notes">
+						<ul>
+						<li>Hello World!</li>
+						<li>REPL: 10, double, add, hello-world</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h1>Buttons example</h1>
+				</section>
 			</div>
 		</div>
 
@@ -42,7 +151,8 @@
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+				],
+				controls: false
 			});
 		</script>
 	</body>

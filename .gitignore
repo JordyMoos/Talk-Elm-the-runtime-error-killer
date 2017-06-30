@@ -7,7 +7,9 @@ out/
 .svn
 log/*.log
 tmp/**
+npm-debug.log
 node_modules/
 .sass-cache
 css/reveal.min.css
 js/reveal.min.js
+yarn.lock
