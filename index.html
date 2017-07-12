@@ -154,8 +154,8 @@
 				<section>
 					<h1>Hello World!</h1>
 					<ul>
-						<li>Elm-REPL</li>
 						<li>Syntax</li>
+						<li>Elm-REPL</li>
 						<li>Types</li>
 						<li>Currying</li>
 					</ul>
@@ -165,7 +165,6 @@
 					<h1>Buttons</h1>
 					<ul>
 						<li>Interactive</li>
-						<li>Modules</li>
 						<li>Architecture</li>
 						<li>Elm-Reactor</li>
 					</ul>
@@ -183,6 +182,7 @@
 						<ul>
 							<li>Emphasize</li>
 						</ul>
+					</aside>
 				</section>
 
 				<section>
@@ -251,6 +251,7 @@ addFive(3)   // Returns 8
 					<ul>
 						<li>Elm application starts at the function main</li>
 						<li>Function application by spaces</li>
+						<li>Elm does not need "return"</li>
 						<li>The last part of the function type is the return type</li>
 						<li>All functions in Elm are curried</li>
 						<li>Use the repl to play with functions and types</li>
@@ -269,39 +270,51 @@ addFive(3)   // Returns 8
 				</section>
 
 				<section>
-					<img src="img/a-1.jpg">
+					<img src="img/elm-architecture/01.svg">
 				</section>
 
 				<section>
-					<img src="img/a-2.jpg">
+					<img src="img/elm-architecture/02.svg">
 				</section>
 
 				<section>
-					<img src="img/a-3.jpg">
+					<img src="img/elm-architecture/03.svg">
 				</section>
 
 				<section>
-					<img src="img/a-4.jpg">
+					<img src="img/elm-architecture/04.svg">
 				</section>
 
 				<section>
-					<img src="img/a-5.jpg">
+					<img src="img/elm-architecture/05.svg">
 				</section>
 
 				<section>
-					<img src="img/a-6.jpg">
+					<img src="img/elm-architecture/06.svg">
 				</section>
 
 				<section>
-					<img src="img/a-7.jpg">
+					<img src="img/elm-architecture/07.svg">
 				</section>
 
 				<section>
-					<img src="img/a-8.jpg">
+					<img src="img/elm-architecture/08.svg">
 				</section>
 
 				<section>
-					<img src="img/a-9.jpg">
+					<img src="img/elm-architecture/09.svg">
+				</section>
+
+				<section>
+					<img src="img/elm-architecture/10.svg">
+				</section>
+
+				<section>
+					<img src="img/elm-architecture/11.svg">
+				</section>
+
+				<section>
+					<img src="img/elm-architecture/12.svg">
 				</section>
 
 				<section>
@@ -381,7 +394,13 @@ addFive(3)   // Returns 8
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				],
-				controls: false
+				controls: false,
+
+                // Transition style
+                transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+                // Transition speed
+                transitionSpeed: 'fast' // default/fast/slow
 			});
 		</script>
 	</body>
