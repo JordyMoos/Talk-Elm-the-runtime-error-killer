@@ -61,3 +61,8 @@ $selectionBackgroundColor: $magenta;
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+
+.reveal b {
+	color: $blue;
+}
