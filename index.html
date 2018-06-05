@@ -27,77 +27,26 @@
 				<section>
 					<img src="img/elm-logo.png" class="noborder">
 					<h1>Elm, the runtime error killer</h1>
-					<aside class="notes">
-						<ul>
-							<li>I am a backend developer</li>
-							<li>Own projects, include frontend, not plain javascript</li>
-							<li>I played with angular...</li>
-							<li>React -> State -> Hard</li>
-							<li>Versions changes fast -> Tutorials out of date</li>
-							<li>Emberjs -> everything was included</li>
-							<li>Beginning easy -> But it did not take long before i lost track of all those files with just a few lines of code doing really critical things.</li>
-							<li>It was just too complex for me.</li>
-							<li>
-								Maybe if i had more time, that i then could figure it all out. But as a side project; it was just too much and it did not really intrigue me.
-							</li>
-							<li>When you code you make errors... And those errors
-								can be really crytic with frameworks</li>
-							<li>I had browser extensions</li>
-							<li>Issue something weird happend</li>
-						</ul>
-					</aside>
+				</section>
+
+				<section>
+					<i>(Only true if his life started at the age of 12)</i>
+				</section>
+
+				<section>
+					<img src="img/error-console.png" class="noborder">
+				</section>
+
+				<section>
+					<img src="img/angular-error.png" class="noborder">
 				</section>
 
 				<section>
 					<img src="img/would-you-kindly.png" class="noborder">
-					<aside class="notes">
-						<ul>
-							<li>I have no choice i have to add this feature</li>
-							<li>I am scared, did not touch for years</li>
-							<li>Lost track of the context</li>
-							<li>Forget things -> runtime errors</li>
-							<li>This is doomed to fail</li>
-							<li>... A bit less than a year ago. I came in contact with Elm.</li>
-						</ul>
-					</aside>
 				</section>
 
 				<section>
 					<img src="img/elm-logo.png" class="noborder">
-					<aside class="notes">
-						<ul>
-							<li>This is actually a funny story.</li>
-							<li>I was intrigued about reactive programming.</li>
-						</ul>
-					</aside>
-				</section>
-
-				<section>
-					<img src="img/google-reactive-programming-conference.png" class="noborder">
-				</section>
-
-				<section>
-					<img src="img/reactiveconf-logo.jpg" class="noborder">
-					<aside class="notes">
-						<ul>
-							<li>Look they have a funny logo</li>
-							<li>Please note: i had never heard of react framework at that time</li>
-						</ul>
-					</aside>
-				</section>
-
-				<section>
-					<img src="img/react-1.png" class="noborder">
-					<img src="img/react-2.png" class="noborder">
-					<img src="img/react-3.png" class="noborder">
-					<aside class="notes">
-						<ul>
-							<li>I was a bit suspicious about the amount of javascript</li>
-							<li>I mailed them</li>
-							<li>They replied that it was not just about javascript</li>
-						</ul>
-						<p>Maybe there was a language barrier or i did not form my email correctly. Anyways we bought the tickets and i went with a college to the ReactiveConf learning that there was something called the React Framework. That was a bit of a bummer for me.</p>
-					</aside>
 				</section>
 
 				<section>
@@ -116,27 +65,15 @@
 
 				<section>
 					<img src="img/clockpicker.png" class="noborder">
-					<aside class="notes">
-						That i have not touched in years. And rewrote it in elm
-					</aside>
 				</section>
 
 				<section>
 					<img src="img/elm-clockpicker.png" class="noborder">
-					<aside class="notes">
-						I now even make up frontend projects...
-					</aside>
 				</section>
 
 				<section>
 					<img src="img/elm-logo.png" class="noborder">
 					<h1>Elm, the runtime error killer</h1>
-					<aside class="notes">
-						<ul>
-							<li>My name is Jordy Moos and welcome to my talk “Elm, the runtime error killer”</li>
-							<li>Hands</li>
-						</ul>
-					</aside>
 				</section>
 
 				<section>
@@ -145,21 +82,8 @@
 						<li>The syntax</li>
                         <li>Type system</li>
 						<li>Architecture</li>
-						<li>
-							Tools provided by Elm
-							<ul class="fragment fade-in">
-								<li>repl</li>
-								<li>reactor</li>
-								<li>make</li>
-								<li>package</li>
-							</ul>
-						</li>
+						<li>Tools provided by Elm</li>
 					</ul>
-					<aside class="notes">
-						<li>Go over the list</li>
-						<li>We make it a practical talk -> through examples</li>
-						<li>Yawn / look weird</li>
-					</aside>
 				</section>
 
 				<section>
@@ -198,11 +122,6 @@
 
 				<section>
 					<h1>What is Elm?</h1>
-					<aside class="notes">
-						<ul>
-							<li>Frontend language that compiles to javascript</li>
-						</ul>
-					</aside>
 				</section>
 
 				<section>
@@ -231,6 +150,10 @@
 						<li class="fragment fade-in">All values are immutable</li>
 						<li class="fragment fade-in">Elm is fast</li>
 					</ul>
+				</section>
+
+				<section>
+					<img src="img/benchmark.png" class="noborder">
 				</section>
 
 				<section>
@@ -341,6 +264,10 @@ addFive(3)   // Returns 8
 				</section>
 
 				<section>
+					<img src="img/architecture.jpg" class="noborder">
+				</section>
+
+				<section>
 					<img src="img/elm-architecture/01.svg">
 				</section>
 
@@ -355,7 +282,7 @@ addFive(3)   // Returns 8
 				<section>
 					<img src="img/elm-architecture/04.svg">
 				</section>
-
+				
 				<section>
 					<img src="img/elm-architecture/05.svg">
 				</section>
@@ -473,10 +400,11 @@ addFive(3)   // Returns 8
 						<li>Elm is pure functional</li>
 						<li>Cmd: Tell elm "engine" to do something</li>
 						<li>Sub: Listen to events in the Elm "engine"</li>
+						<li class="fragment fade-in">Elm can communicate with javascript in the same way</li>
 					</ul>
 					<aside class="notes">
 						<ul>
-						<li>Elm-reactor</li>
+							<li>Elm-reactor</li>be
 						</ul>
 					</aside>
 				</section>
@@ -484,10 +412,21 @@ addFive(3)   // Returns 8
 				<section>
 					<h2>When to use Elm?</h2>
 					<ul>
-						<li class="fragment fade-in">Whenever you can use React / Angular / Ember / Etc</li>
+						<li class="fragment fade-in">Whenever you can use React / Angular / Polymer</li>
 						<li class="fragment fade-in">Fullscreen / Just this element</li>
-						<li class="fragment fade-in">Elm can communicate with javascript</li>
 					</ul>
+				</section>
+
+				<section>
+					<img src="img/ing-1.png" class="noborder">
+				</section>
+
+				<section>
+					<img src="img/ing-2.png" class="noborder">
+				</section>
+
+				<section>
+					<img src="img/ing-3.png" class="noborder">
 				</section>
 
 				<section>
@@ -520,10 +459,13 @@ addFive(3)   // Returns 8
 					</ul>
 				</section>
 
-                <section>
-                    <h2>Please rate me on Joind.in</h2>
-					<p><a href="https://joind.in/talk/57ccb">https://joind.in/talk/57ccb</a></p>
-                </section>
+				<section>
+					<h2>Final Words</h2>
+					<ul>
+						<li class="fragment fade-in">Ask me</li>
+						<li class="fragment fade-in">Show me</li>
+					</ul>
+				</section>
 
                 <section>
                     <h1>Thank You</h1>
